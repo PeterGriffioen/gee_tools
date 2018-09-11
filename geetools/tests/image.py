@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import ee
-from .. import tools
+from geetools import tools
 ee.Initialize()
 
 

@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import ee
-from ..tools.geometry import getRegion
+from geetools.tools.geometry import getRegion
 ee.Initialize()
 
 class TestGeometry(unittest.TestCase):

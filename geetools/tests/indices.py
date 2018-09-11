@@ -2,8 +2,8 @@
 from __future__ import print_function
 import unittest
 import ee
-from .. import indices
-from ..tools.image import get_value
+from geetools import indices
+from geetools.tools.image import get_value
 ee.Initialize()
 from . import TEST_CLOUD_IMAGES
 

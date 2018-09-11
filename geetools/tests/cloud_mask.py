@@ -2,9 +2,9 @@
 # coding=utf-8
 import unittest
 import ee
-from .. import tools, cloud_mask
-from ..tools.image import get_value
-from ..tools.geometry import getRegion
+from geetools import tools, cloud_mask
+from geetools.tools.image import get_value
+from geetools.tools.geometry import getRegion
 ee.Initialize()
 
 area = ee.Geometry.Point([-65.80, -25.01])

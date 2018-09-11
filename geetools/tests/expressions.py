@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import ee
-from ..tools.image import get_value
+from geetools.tools.image import get_value
 ee.Initialize()
 
 class TestExpressions(unittest.TestCase):

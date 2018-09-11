@@ -3,7 +3,7 @@ import unittest
 import ee
 ee.Initialize()
 
-from ..tools import ee_list as listools
+from geetools.tools import ee_list as listools
 
 class TestList(unittest.TestCase):
     def setUp(self):

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fb3164da-eb17-4d15-bc93-e72d03696e1d}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>setup.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="docs\build\html\cloud_mask.html" />
+    <Content Include="docs\build\html\Documentation.html" />
+    <Content Include="docs\build\html\expressions.html" />
+    <Content Include="docs\build\html\genindex.html" />
+    <Content Include="docs\build\html\imagestrip.html" />
+    <Content Include="docs\build\html\index.html" />
+    <Content Include="docs\build\html\Introduction.html" />
+    <Content Include="docs\build\html\py-modindex.html" />
+    <Content Include="docs\build\html\search.html" />
+    <Content Include="docs\build\html\searchindex.js" />
+    <Content Include="docs\build\html\tools.html" />
+    <Content Include="docs\build\html\_modules\geetools\cloud_mask.html" />
+    <Content Include="docs\build\html\_modules\geetools\expressions.html" />
+    <Content Include="docs\build\html\_modules\geetools\imagestrip.html" />
+    <Content Include="docs\build\html\_modules\geetools\tools.html" />
+    <Content Include="docs\build\html\_modules\index.html" />
+    <Content Include="docs\build\html\_sources\cloud_mask.rst.txt" />
+    <Content Include="docs\build\html\_sources\Documentation.rst.txt" />
+    <Content Include="docs\build\html\_sources\expressions.rst.txt" />
+    <Content Include="docs\build\html\_sources\imagestrip.rst.txt" />
+    <Content Include="docs\build\html\_sources\index.rst.txt" />
+    <Content Include="docs\build\html\_sources\Introduction.rst.txt" />
+    <Content Include="docs\build\html\_sources\tools.rst.txt" />
+    <Content Include="docs\build\html\_static\ajax-loader.gif" />
+    <Content Include="docs\build\html\_static\basic.css" />
+    <Content Include="docs\build\html\_static\css\badge_only.css" />
+    <Content Include="docs\build\html\_static\css\theme.css" />
+    <Content Include="docs\build\html\_static\doctools.js" />
+    <Content Include="docs\build\html\_static\fonts\fontawesome-webfont.svg" />
+    <Content Include="docs\build\html\_static\jquery-3.1.0.js" />
+    <Content Include="docs\build\html\_static\jquery.js" />
+    <Content Include="docs\build\html\_static\js\modernizr.min.js" />
+    <Content Include="docs\build\html\_static\js\theme.js" />
+    <Content Include="docs\build\html\_static\pygments.css" />
+    <Content Include="docs\build\html\_static\searchtools.js" />
+    <Content Include="docs\build\html\_static\underscore-1.3.1.js" />
+    <Content Include="docs\build\html\_static\underscore.js" />
+    <Content Include="docs\build\html\_static\websupport.js" />
+    <Content Include="geetools.egg-info\dependency_links.txt" />
+    <Content Include="geetools.egg-info\requires.txt" />
+    <Content Include="geetools.egg-info\SOURCES.txt" />
+    <Content Include="geetools.egg-info\top_level.txt" />
+    <Content Include="js\addLayerCol.js" />
+    <Content Include="js\ExportCol.js" />
+    <Content Include="js\filterDistance.js" />
+    <Content Include="js\reclass.js" />
+    <Content Include="js\stretch_std.js" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="docs\source\conf.py" />
+    <Compile Include="geetools\batch.py" />
+    <Compile Include="geetools\bitreader.py" />
+    <Compile Include="geetools\cloud_mask.py" />
+    <Compile Include="geetools\decision_tree.py" />
+    <Compile Include="geetools\expressions.py" />
+    <Compile Include="geetools\filters.py" />
+    <Compile Include="geetools\indices.py" />
+    <Compile Include="geetools\manager.py" />
+    <Compile Include="geetools\tests\cloud_mask.py" />
+    <Compile Include="geetools\tests\ee_list.py" />
+    <Compile Include="geetools\tests\expressions.py" />
+    <Compile Include="geetools\tests\geometry.py" />
+    <Compile Include="geetools\tests\image.py" />
+    <Compile Include="geetools\tests\imagestrip.py" />
+    <Compile Include="geetools\tests\indices.py" />
+    <Compile Include="geetools\tests\__init__.py" />
+    <Compile Include="geetools\tools\date.py" />
+    <Compile Include="geetools\tools\dictionary.py" />
+    <Compile Include="geetools\tools\ee_list.py" />
+    <Compile Include="geetools\tools\featurecollection.py" />
+    <Compile Include="geetools\tools\geometry.py" />
+    <Compile Include="geetools\tools\image.py" />
+    <Compile Include="geetools\tools\imagecollection.py" />
+    <Compile Include="geetools\tools\number.py" />
+    <Compile Include="geetools\tools\segmentation.py" />
+    <Compile Include="geetools\tools\__init__.py" />
+    <Compile Include="geetools\ui\chart.py" />
+    <Compile Include="geetools\ui\imagestrip.py" />
+    <Compile Include="geetools\ui\ipymap.py" />
+    <Compile Include="geetools\ui\ipytools.py" />
+    <Compile Include="geetools\ui\maptool.py" />
+    <Compile Include="geetools\ui\__init__.py" />
+    <Compile Include="geetools\__init__.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <Folder Include="docs\build\" />
+    <Folder Include="docs\build\html" />
+    <Folder Include="docs\build\html\_modules" />
+    <Folder Include="docs\build\html\_modules\geetools" />
+    <Folder Include="docs\build\html\_sources" />
+    <Folder Include="docs\build\html\_static" />
+    <Folder Include="docs\build\html\_static\css" />
+    <Folder Include="docs\build\html\_static\fonts" />
+    <Folder Include="docs\build\html\_static\js" />
+    <Folder Include="docs\source" />
+    <Folder Include="geetools" />
+    <Folder Include="geetools.egg-info" />
+    <Folder Include="geetools\tests" />
+    <Folder Include="geetools\tools" />
+    <Folder Include="geetools\ui" />
+    <Folder Include="js" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
