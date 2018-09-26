@@ -9,7 +9,7 @@ if not ee.data._initialized:
     ee.Initialize()
 
 
-def eprint(eeobject, indent=2, notebook=False, async=False):
+def eprint(eeobject, indent=2, notebook=False, doasync=False):
     """ Print an EE Object. Same as `print(object.getInfo())`
 
     :param eeobject: object to print
@@ -38,7 +38,7 @@ def eprint(eeobject, indent=2, notebook=False, async=False):
         result.append(info)
 
     try:
-        if async:
+        if doasync:
             manager = multiprocessing.Manager()
             info = manager.list()
             proxy = ee.serializer.encode(eeobject)
@@ -53,7 +53,7 @@ def eprint(eeobject, indent=2, notebook=False, async=False):
         info = eeobject
 
     if not notebook:
-        if async:
+        if doasync:
             def finalwait():
                 isinfo = len(info) > 0
                 while not isinfo:

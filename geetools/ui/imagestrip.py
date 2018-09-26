@@ -3,8 +3,8 @@
 
 from __future__ import print_function
 from .. import batch
-from PIL import Image as ImPIL
-from PIL import ImageDraw, ImageFont
+from pil import Image as ImPIL
+from pil import ImageDraw, ImageFont
 import os.path
 import ee
 import logging

@@ -2,7 +2,7 @@
 import unittest
 import ee
 from geetools.ui import imagestrip
-from PIL.Image import Image
+from pil.Image import Image
 ee.Initialize()
 
 class TestStrip(unittest.TestCase):
