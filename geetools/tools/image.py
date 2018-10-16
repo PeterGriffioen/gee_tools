@@ -331,6 +331,15 @@ def minscale(image):
     return ee.Number(bands.slice(1).iterate(wrap, ini))
 
 
+def mask2zero(img):
+    """ Converts masked pixels into zeros
+    :param img: Image contained in the Collection
+    :type img: ee.Image
+    """
+    theMask = img.mask()
+    return theMask.where(1, img)
+
+
 def compute_bits(image, start, end, newName):
     """ Compute the bits of an image
 

@@ -13,7 +13,7 @@ class TestStrip(unittest.TestCase):
                                               [-65.5, -24.5],
                                               [-65.5, -25]]])
 
-        self.l8SR_col = ee.ImageCollection("LANDSAT/LC8_SR")
+        self.l8SR_col = ee.ImageCollection("LANDSAT/LC08/C01/T1_SR")
 
     def test_strip(self):
         strip = imagestrip.ImageStrip("test", description="just a test")
